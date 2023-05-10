@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalizer.css">
+    <link rel="stylesheet" href="css/globals.css">
+    <title>Encriptador</title>
+</head>
+<body>
+
+    <header class="header container">
+        <div class="header__logo">
+            <img src="./img/logo.svg" alt="logo">
+        </div> 
+    </header>
+    
+    <div class="area container">
+        
+        <div class="area__encrypt">
+            <div class="area__box">
+                <textarea name="encrypter" id="encrypter" cols="30" rows="15" required></textarea>
+                <footer class="area__footer">
+                    <span class="material-symbols-outlined">
+                        error
+                    </span>  
+                    <p class="text_error"></p>
+                </footer>
+                
+            </div>
+            <div class="area__buttons">
+                <input type="button" value="Encriptar" class="area__button" id="encrypt">
+                <input type="button" value="Desencriptar" class="area__button" id="decrypt">
+            </div>
+        </div>
+
+        <div class="area__decrypt">
+
+            <div class="area__box">
+                <div class="area__image">
+                    <img src="./img/Muñeco.svg" alt="image">
+                </div>
+                <div class="area__text">
+                    <p class="decrypter">Ningún mensaje fue encontrado.</p>
+                    <p class="decrypter__text">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <div class="area__buttons--decrypt">
+                    <input type="button" value="Copiar" class="area__button area__button--decrypt">
+                </div>
+            </div> 
+            
+            
+            
+        </div>
+    </div>
+    
+</body>
+<script src="challenge.js"></script>
+</html>

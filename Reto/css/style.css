@@ -1,0 +1,219 @@
+.container{
+    width: 95%;
+    max-width: 1200px;
+    margin:2.4rem auto 0 auto;
+}
+
+
+.header__logo{
+    background-color: transparent;
+    padding: 2rem 0;
+}
+
+.area__box{
+    max-width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+.area{
+    margin: 0 auto;
+}
+
+
+.area__box textarea, .decrypter{
+    width: 100%;
+    border: solid 1px transparent;
+    font-size: 3rem;
+    text-align: center;
+    color: #0A3871;
+    max-height: 50rem
+}
+
+.area__text{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.area__text .decrypter{
+    word-wrap: break-word;
+    max-width: 85%;
+    overflow: auto;
+    max-height: 20rem;
+    font-weight: 800;
+    font-size: 2.4rem;
+    padding: 0 1rem;
+}
+
+.area__box textarea{
+    border: solid 1px #1615153b;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.area__footer{
+    transform: scale(0);
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.area__footer.active{
+    transform: scale(1);
+}
+
+.area__footer span{
+    color: #67808E;
+    vertical-align: middle;
+    margin-bottom: 0.5rem;
+}
+
+.area__footer p {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #495057;
+}
+
+
+.area__button{
+    display: block;
+    margin: 1.5rem 0 0 0;
+    border:solid 1px #0A3871;
+    width: 100%;
+    border-radius: 2rem;
+    height: 4.8rem;
+    color: #0A3871;
+    padding: 2.4rem auto;
+    background-color: #ffffff;
+    cursor: pointer;
+    
+}
+
+.area__buttons .area__button:nth-child(1){
+    background: #0A3871;
+    color: #ffffff;
+}
+
+
+
+.area__decrypt {
+    margin: 2rem 0;
+    background-color: #ffffff;
+    border-radius: 3rem;
+    box-shadow: 5px 10px 28px -8px #888a91;
+    padding-top: 2rem;
+}
+
+.area__decrypt p {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #495057;
+    margin: 2rem auto;
+}
+
+
+.area__image{
+    display: none;
+}
+
+
+.area__image.inactive,.decrypter__text.inactive{
+    display: none;
+}
+
+
+
+
+.area__buttons--decrypt{
+    position: relative;
+}
+
+
+.area__button--decrypt{
+    width: 80%;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.decrypter.active{
+    font-weight: 100;
+    
+}   
+
+
+
+
+@media (min-width:768px) { 
+
+
+    .area__button--decrypt{
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    .area__buttons{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+@media (min-width:1024px) { 
+    .container{
+        max-width: 1800px;
+    }
+
+    .header__logo{
+        background-color: transparent;
+    }
+
+    .area{
+        display: flex;
+        gap: 2rem;
+        height: 80vh
+    }
+
+
+    .area__encrypt{
+        flex-basis: 70%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+
+    .area__decrypt , .area__encrypt{
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+
+    .area__decrypt{
+        width: 35%;
+    }
+
+    .area__decrypt p{
+        margin-top: 0;
+    }
+
+
+    .area__box {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: space-between;
+        height: 100%;
+    
+    }
+
+
+    .area__box textarea:nth-child(1){
+        background-color: transparent;
+    }
+
+    .area__image{
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: 10rem;
+    }
+
+}
